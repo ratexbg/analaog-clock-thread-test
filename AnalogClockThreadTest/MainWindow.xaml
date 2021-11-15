@@ -1,0 +1,25 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnalogClockThreadTest"
+        xmlns:_2021="clr-namespace:_16._01._2021;assembly=16.01.2021" x:Class="AnalogClockThreadTest.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Border BorderThickness="2" BorderBrush="Black" Margin="4">
+            <_2021:UserControl1 x:Name="Clock" HorizontalAlignment="Center" Height="300" Padding="0" VerticalAlignment="Center" Width="300"/>
+            </Border>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,30,0,0">
+                <Button x:Name="BtnStart" FontWeight="Bold" FontSize="18" Margin="50,0" Content="Start" Click="BtnStart_Click" HorizontalAlignment="Center"/>
+                <Button x:Name="BtnStop" FontWeight="Bold" FontSize="18" Margin="50,0" Content="Stop" Click="BtnStop_Click" HorizontalAlignment="Center"/>
+
+            </StackPanel>
+        </StackPanel>
+
+      
+
+    </Grid>
+</Window>
